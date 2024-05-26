@@ -63,4 +63,4 @@ Short steps are -
     """
 
 ## example of a query about personal data
-![Query asked related to resume](image.png)
+![Query asked related to resume](util/example.png)
