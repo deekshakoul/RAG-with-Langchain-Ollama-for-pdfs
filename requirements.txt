@@ -1,0 +1,5 @@
+pypdf
+langchain
+langchain-community
+langchain-chroma
+streamlit
