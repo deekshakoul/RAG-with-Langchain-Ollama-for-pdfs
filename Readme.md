@@ -46,6 +46,8 @@ Short steps are -
 - user inputs a query
     - calls `answer_query`
     - retrevies context from vector db based on query
+        - [improvement] instead of just using whatever entries are sent by vectordb; we can use a reranker to rerank the entries wrt our query for better context
+        - langchain provides lot of [retrievers](https://python.langchain.com/v0.1/docs/integrations/retrievers/bm25/)
     - create a prompt using context + query 
     - invoke LLM(llama3) with prompt
     - format and send back response
@@ -61,6 +63,8 @@ Short steps are -
         ---
         On a scale of 1 to 5, with 5 being identical, how well does the actual response match the expected response? 
     """
+## to maintain context of chats [to do]
+
 
 ## example of a query about personal data
 ![Query asked related to resume](util/example.png)
